@@ -11,5 +11,5 @@ git clone https://github.com/pengrongjie/express-socket.git
 cd express-socket
 cnpm install 
 node app.js
-http://localhost:80/
 ```
+> http://localhost:80/
