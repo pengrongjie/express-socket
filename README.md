@@ -1,5 +1,9 @@
 # express-socket
-express+socket.io聊天室
+> express+socket.io聊天室
+
+- [ ] 示完成
+- [x] 完成
+
 ## 项目大概
 
 ![](./doc/1508489067(1).png)
