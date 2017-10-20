@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>express+socket聊天室</title>
+    <link rel="stylesheet" href="../css/index.css">
+  </head>
+  <body>
+    <!-- 头部 -->
+    <header class="header">
+      express+socket聊天室(<span id="status">0</span>)
+    </header>
+
+    <!-- 历史消息 -->
+    <section class="historyMsg" id="historyMsg">
+
+    </section>
+
+    <!-- 输入框 -->
+    <section class="control">
+        <input id="inputMsg" class="inputMsg">
+        <button id="sendBtn" class="sendBtn">发送</button>
+      <!-- </div> -->
+    </section>
+
+    <!-- 登录 -->
+    <section id="loginWrapper" class="loginWrapper">
+      <p id="info" class="info">欢迎来到express+socket聊天室</p>
+			<div id="nickWrapper" class="nickWrapper">
+				<input type="text" placeholder="来个呢称，才能进行聊天室哦" id="nicknameInput" class="text" />
+				<input type="button" class="button" id="loginBtn" value="登录" />
+			</div>
+    </section>
+
+    <script type="text/javascript" src="../js/socket.io.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+  </body>
+</html>

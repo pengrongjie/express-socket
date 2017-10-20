@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button,
+input {
+  outline: none;
+}
+body {
+  padding: 50px 0;
+  background-color: #f1f1f1;
+}
+/*头部*/
+body .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background-color: #00aaee;
+  z-index: 999;
+}
+/*登录框*/
+body .loginWrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 40%;
+  background-color: rgba(0,0,0,.1);
+  z-index: 1000;
+}
+body .loginWrapper .info{
+  height: 50px;
+  line-height: 50px;
+}
+body .loginWrapper input{
+  display: block;
+  height: 40px;
+  width: 80%;
+  line-height: 40px;
+  margin: 20px auto;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+body .loginWrapper input:focus{
+  border: 1px solid #00aaee;
+}
+body .loginWrapper input.button{
+  background-color: #00aaee;
+  color: #fff;
+}
+/*输入框*/
+body .control{
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 1000;
+}
+body .control input {
+  flex: 1;
+  padding-left: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+body .control input:focus{
+  border: 1px solid #00aaee;
+}
+body .control button{
+  flex: 0 0 60px;
+  width: 60px;
+  background-color: #00aaee;
+  color: #fff;
+  border: 1px solid #00aaee;
+  border-radius: 4px;
+}
+/*系统消息*/
+body .historyMsg{
+
+}
+body .historyMsg .system{
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+body .historyMsg .system .nickname{
+  color: #00aaee;
+}
+/*我自己发送的消息*/
+body .historyMsg .myMsg {
+  margin: 0 10px 10px 0;
+  text-align: right;
+}
+body .historyMsg .myMsg .timespan{
+  display: block;
+  font-size: 12px;
+  color: #333;
+}
+body .historyMsg .myMsg .nickname{
+  display: none;
+}
+body .historyMsg .myMsg .text{
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 5px;
+  padding: 0 8px;
+  background-color: #00aaee;
+  color: #fff;
+  border: 1px solid #00aaee;
+  border-radius: 10px;
+}
+
+/*别人发送的消息*/
+body .historyMsg .newMsg{
+  margin: 0 0 10px 10px;
+}
+body .historyMsg .newMsg .timespan{
+  display: block;
+  font-size: 12px;
+  color: #333;
+}
+body .historyMsg .newMsg .nickname{
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 5px;
+  padding: 0 4px;
+  background-color: #fff;
+  color: #00aaee;
+  border: 1px solid #fff;
+  border-radius: 10px 0 0 10px;;
+}
+body .historyMsg .newMsg .text{
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 5px;
+  padding: 0 4px 0 4px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #fff;
+  border-radius: 0 10px 10px 0;
+}
+.nickWrapper{
+	display: none;
+}
